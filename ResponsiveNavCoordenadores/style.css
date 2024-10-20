@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navTitle{
+    @apply text-black font-londrina max-[1200px]:text-xl text-3xl my-6 md:my-0 dark:text-white hover:text-neutral-500 hover:md:text-4xl  hover:transition-all duration-200 dark:hover:text-neutral-500;
+};
+.body{
+    @apply dark:bg-[#0A0F1E] transition-all duration-300;
+}
+
+.invertColor {
+    @apply dark:invert dark:hover:invert-50 hover:invert-50 duration-200;
+}
