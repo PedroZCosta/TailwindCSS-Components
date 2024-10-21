@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navTitle{
+    @apply text-black font-londrina max-[1200px]:text-xl text-3xl my-6 md:my-0 dark:text-white hover:text-neutral-500 hover:md:text-4xl  hover:transition-all duration-200 dark:hover:text-neutral-500;
+}
+
+.body{
+    @apply dark:bg-[#0A0F1E] transition-all duration-300;
+}
+
+.invertColor {
+    @apply dark:invert dark:hover:invert-50 hover:invert-50 duration-200;
+}
+
+.dadCards{
+  @apply flex justify-center flex-wrap text-center gap-x-8 m-7;
+}
+
+.card{
+  @apply text-white font-londrina font-bold rounded-3xl hover:scale-125 duration-150 m-8 relative -z-20;
+}
+
+.pageTitle {
+  @apply text-center text-white font-londrina text-6xl md:text-8xl dark:text-white my-8 -z-20 relative pointer-events-none;
+}
+
+.body{
+  @apply dark:bg-[#0A0F1E] transition-all duration-300;
+}
