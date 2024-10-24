@@ -3,7 +3,8 @@ const sunIcon = document.querySelector(".sun");
 const moonIcon = document.querySelector(".moon");
 const hamburgerIcon = document.querySelector(".hamburger");
 const xIcon = document.querySelector(".x");
-const list = document.querySelector('.ul');
+const list = document.querySelector('.navAll');
+const total = document.querySelector('.total');
 
 // Variáveis dos temas
 const userTheme = localStorage.getItem("theme");
@@ -70,19 +71,24 @@ xIcon.addEventListener("click", () => {
 });
 
 // 
-const Lists = document.querySelector('.ul')
+
+
 function onToggleMenu(e){
     e.name = e.name === 'menu' ? 'close' : 'menu';
-
     // Se for o botão de close, fecha o menu
     if (e.name === 'menu') {
         // Remove as classes anteriores
-        Lists.classList.remove('top-[20px]', 'opacity-100');
-        Lists.classList.add('top-[-120px]', 'opacity-0'); // Volta ao estado inicial
+        list.classList.remove('top-[20px]', 'opacity-100');
+        list.classList.add('top-[-120px]', 'opacity-0'); // Volta ao estado inicial
+        total.classList.remove('top-60'); 
+        total.classList.add('top-1');// 
+
     } else {
         // Se estiver abrindo o menu
-        Lists.classList.remove('top-[-120px]', 'opacity-0'); // Remove as classes de estado inicial
-        Lists.classList.add('top-[20px]', 'opacity-100'); // Adiciona classes para abrir o menu
+        list.classList.remove('top-[-120px]', 'opacity-0'); // Remove as classes de estado inicial
+        list.classList.add('top-[20px]', 'opacity-100'); // Adiciona classes para abrir o menu
+        total.classList.remove('top-1'); 
+        total.classList.add('top-60');
     }
 }
 // Invocar o check de tema no carregamento inicial
