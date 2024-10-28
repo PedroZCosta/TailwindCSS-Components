@@ -3,7 +3,7 @@ const sunIcon = document.querySelector(".sun");
 const moonIcon = document.querySelector(".moon");
 const hamburgerIcon = document.querySelector(".hamburger");
 const xIcon = document.querySelector(".x");
-const list = document.querySelector('.navText');
+const list = document.querySelector('.navAll');
 const total = document.querySelector('.total');
 
 // Variáveis dos temas
@@ -80,7 +80,7 @@ function onToggleMenu(e){
         // Remove as classes anteriores
         list.classList.remove('top-[20px]', 'opacity-100');
         list.classList.add('top-[-120px]', 'opacity-0'); // Volta ao estado inicial
-        total.classList.remove('top-96'); 
+        total.classList.remove('top-60'); 
         total.classList.add('top-1');// 
 
     } else {
@@ -88,7 +88,7 @@ function onToggleMenu(e){
         list.classList.remove('top-[-120px]', 'opacity-0'); // Remove as classes de estado inicial
         list.classList.add('top-[20px]', 'opacity-100'); // Adiciona classes para abrir o menu
         total.classList.remove('top-1'); 
-        total.classList.add('top-96');
+        total.classList.add('top-60');
     }
 }
 // Invocar o check de tema no carregamento inicial

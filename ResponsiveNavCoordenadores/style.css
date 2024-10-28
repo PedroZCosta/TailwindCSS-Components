@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.navTitle{
-    @apply text-black font-londrina max-[1200px]:text-xl text-3xl my-6 md:my-0 dark:text-white hover:text-neutral-500 hover:md:text-4xl  hover:transition-all duration-200 dark:hover:text-neutral-500;
-};
+.navAll {
+    @apply py-10 md:flex md:items-center z-[1] md:static absolute md:left-0 md:py-0 sm:py-4 md:pl-0 md:opacity-100 transition-all ease-in-out duration-500  backdrop-blur-md rounded-lg md:backdrop-filter-none md:bg-transparent text-center mx-0 w-full sm:w-auto;
+}
+
+.navText{
+    @apply text-black font-londrina text-xl md:text-2xl lg:text-3xl my-6 dark:text-white hover:text-neutral-500 hover:md:text-4xl hover:text-3xl hover:transition-all duration-200 dark:hover:text-neutral-500;
+}
+
 .body{
     @apply dark:bg-[#0A0F1E] transition-all duration-300;
 }
